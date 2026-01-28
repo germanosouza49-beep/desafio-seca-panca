@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Seca Pança | Thais Araujo</title>
+  <meta name="description" content="Desafio Seca Pança: 5 dias para destravar a queima de gordura com Thais Araujo.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- STICKY BAR COM TIMER -->
+  <div class="sticky-bar" id="stickyBar">
+    <div class="container">
+      <p>
+        🔴 AO VIVO: 10-14 JAN às 19:30h
+        <span id="countdown-timer-sticky" class="countdown-timer"></span>
+        | Últimas vagas do Lote 1
+      </p>
+    </div>
+  </div>
+
+  <!-- HERO OTIMIZADO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Conteudo Esquerda -->
+        <div class="hero-content">
+          <span class="badge-inscritos" data-aos="fade-up">
+            <i class="ph ph-users-three"></i>
+            Mais de 3.247 mulheres já garantiram sua vaga
+          </span>
+
+          <span class="tag-highlight" data-aos="fade-up" data-aos-delay="100">MÉTODO COMPROVADO</span>
+
+          <div class="hero-date" data-aos="fade-up" data-aos-delay="150">
+            <span>DATA: 10 A 14 DE JANEIRO (AO VIVO)</span>
+          </div>
+
+          <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="200">
+            Desafio Seca Pança<br>
+            <span>5 Dias de Foco Total</span>
+          </h1>
+
+          <p class="hero-subheadline" data-aos="fade-up" data-aos-delay="250">
+            O Método Prático Para Perder Até 4kg. De 10 a 14 de janeiro eu vou te guiar ao vivo,
+            todo dia, numa troca simples de alimentos. Sem passar fome, sem cardápio caro.
+          </p>
+
+          <div class="cta-wrapper" data-aos="fade-up" data-aos-delay="300">
+            <div class="sales-progress">
+              <div class="progress-label">
+                <span>Lote 1: <strong id="sales-percent">50%</strong> Vendido</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="sales-fill" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="cta-with-microcopy">
+              <a href="#checkout" class="btn btn-primary">
+                GARANTIR MINHA VAGA POR R$37 →
+              </a>
+              <p class="microcopy">
+                <i class="ph ph-check-circle"></i>
+                Acesso imediato após a compra
+              </p>
+            </div>
+            <p class="cta-note">Próximo Lote: R$57,00 (EM BREVE)</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Pilares (Agora em faixa horizontal abaixo) -->
+      <div class="hero-pillars-bar">
+
+        <div class="pillar-item" data-aos="fade-up" data-aos-delay="350">
+          <div class="pillar-icon">
+            <img src="/.netlify/images?url=/images/icon_metabolic.png&w=80&q=80" alt="Ícone Interromper Ciclo"
+              width="64" height="64" loading="lazy">
+          </div>
+          <div class="pillar-text">
+            <h3>Interromper Metabólico</h3>
+            <p>Destravar a queima de gordura nas primeiras 24h.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="pillar-icon">
+            <img src="/.netlify/images?url=/images/icon_substitution.png&w=80&q=80" alt="Ícone Substituição" width="64"
+              height="64" loading="lazy">
+          </div>
+          <div class="pillar-text">
+            <h3>Regra da Substituição</h3>
+            <p>Troca o que INFLAMA pelo que SECA.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item" data-aos="fade-up" data-aos-delay="450">
+          <div class="pillar-icon">
+            <img src="/.netlify/images?url=/images/icon_affordable.png&w=80&q=80" alt="Ícone Economia" width="64"
+              height="64" loading="lazy">
+          </div>
+          <div class="pillar-text">
+            <h3>Fim do Cardápio Caro</h3>
+            <p>Alimentos acessíveis, sem suplementos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVA SEÇÃO: BENEFÍCIOS DESTACADOS -->
+  <section class="section-beneficios" data-aos="fade-up">
+    <div class="container">
+      <div class="section-header">
+        <h2>Por Que o Seca Pança Funciona</h2>
+        <p>4 pilares que fazem toda a diferença nos seus resultados</p>
+      </div>
+
+      <div class="section-beneficios-grid">
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="beneficio-icon">
+            <img src="/.netlify/images?url=/images/icon_no_hunger.png&w=120&q=80" alt="Ícone Sem Fome" width="80"
+              height="80" loading="lazy">
+          </div>
+          <h3>Sem Passar Fome</h3>
+          <p>Método baseado em substituição inteligente de alimentos, não em restrição ou dieta radical.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="beneficio-icon">
+            <img src="/.netlify/images?url=/images/icon_accessible.png&w=120&q=80" alt="Ícone Acessível" width="80"
+              height="80" loading="lazy">
+          </div>
+          <h3>Ingredientes Acessíveis</h3>
+          <p>Tudo que você precisa está no mercado do seu bairro. Sem importados caros ou suplementos.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="beneficio-icon">
+            <img src="/.netlify/images?url=/images/icon_live.png&w=120&q=80" alt="Ícone Ao Vivo" width="80" height="80"
+              loading="lazy">
+          </div>
+          <h3>Acompanhamento Ao Vivo</h3>
+          <p>5 dias de lives diárias às 19:30h. Você nunca está sozinha nessa jornada.</p>
+        </div>
+
+        <div class="beneficio-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="beneficio-icon">
+            <img src="/.netlify/images?url=/images/icon_5days.png&w=120&q=80" alt="Ícone 5 Dias" width="80" height="80"
+              loading="lazy">
+          </div>
+          <h3>Resultados em 5 Dias</h3>
+          <p>Desinchar, perder peso e sentir a diferença nas roupas em apenas 5 dias de aplicação.</p>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">QUERO ESSES BENEFÍCIOS AGORA</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Menos de R$8 por dia de transformação
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DOR (MOVIDA MAIS CEDO) -->
+  <section class="section-dor">
+    <div class="container">
+      <div class="section-header dark-mode">
+        <h2>Por que você desiste?</h2>
+        <p>Os métodos tradicionais foram feitos para falhar.</p>
+      </div>
+
+      <div class="dor-grid">
+        <div class="dor-card" data-aos="fade-up">
+          <div class="dor-icon">
+            <img src="/.netlify/images?url=/images/icon_pain_hunger.png&w=120&q=80" alt="Ícone Fome" width="64"
+              height="64" loading="lazy">
+          </div>
+          <h3>Passar Fome</h3>
+          <p>Dietas restritivas te deixam fraca, ansiosa e louca por doces.</p>
+        </div>
+        <div class="dor-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="dor-icon">
+            <img src="/.netlify/images?url=/images/icon_pain_expensive.png&w=120&q=80" alt="Ícone Custo Alto" width="64"
+              height="64" loading="lazy">
+          </div>
+          <h3>Comida Cara</h3>
+          <p>Você não precisa de tapioca de almôndegas ou salmão para emagrecer.</p>
+        </div>
+        <div class="dor-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="dor-icon">
+            <img src="/.netlify/images?url=/images/icon_pain_yoyo.png&w=120&q=80" alt="Ícone Efeito Sanfona" width="64"
+              height="64" loading="lazy">
+          </div>
+          <h3>Efeito Sanfona</h3>
+          <p>Perde 2kg, ganha 4kg. Seu metabolismo trava e você desanima.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <a href="#checkout" class="btn btn-outline-light">QUERO ACABAR COM ESSE CICLO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DEPOIMENTOS (PROVA SOCIAL) -->
+  <section class="section-depoimentos" data-aos="fade-up">
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Resultados Reais</h2>
+        <p>Veja o que acontece quando você aplica o método da Thais Araujo.</p>
+      </div>
+
+      <div class="depoimentos-grid">
+
+        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="100">
+          <p class="depoimento-text">
+            "Eu não acreditava que em 5 dias veria tanta diferença. Desinchei muito e minhas roupas já estão mais
+            largas!"
+          </p>
+          <p class="depoimento-author">- Ana Paula, 42 anos</p>
+        </div>
+
+        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
+          <p class="depoimento-text">
+            "O melhor foi não passar fome. As substituições são simples e eu consegui seguir com a família toda."
+          </p>
+          <p class="depoimento-author">- Carina S., 39 anos</p>
+        </div>
+
+        <div class="depoimento-card" data-aos="fade-up" data-aos-delay="300">
+          <p class="depoimento-text">
+            "Já tinha tentado de tudo. O método da Thais mudou minha relação com a comida. Perdi 3.5kg!"
+          </p>
+          <p class="depoimento-author">- Maria Luiza, 51 anos</p>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">QUERO TER ESSES RESULTADOS</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Garantia de 7 dias. Risco zero.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-badges" data-aos="fade-up" data-aos-delay="100">
+        <div class="trust-badge">
+          <img src="/.netlify/images?url=/images/icon_shield.png&w=48&q=80" alt="Seguro" width="24" height="24"
+            loading="lazy">
+          <span><strong>Pagamento</strong> 100% Seguro</span>
+        </div>
+        <div class="trust-badge">
+          <img src="/.netlify/images?url=/images/icon_seal.png&w=48&q=80" alt="Garantia" width="24" height="24"
+            loading="lazy">
+          <span><strong>Garantia</strong> de 7 Dias</span>
+        </div>
+        <div class="trust-badge">
+          <img src="/.netlify/images?url=/images/icon_users.png&w=48&q=80" alt="Alunas" width="24" height="24"
+            loading="lazy">
+          <span><strong>+3.247</strong> alunas ativas</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO: GALERIA DE DEPOIMENTOS -->
+  <section class="section-galeria-depoimentos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Quem Aplicou, Aprovou</h2>
+        <p>Histórias reais de mulheres que transformaram seus resultados com o método.</p>
+      </div>
+
+      <div class="carousel-wrapper" data-aos="fade-up">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Anterior" data-carousel="galeria-carousel">
+          <i class="ph ph-caret-left"></i>
+        </button>
+        <div class="carousel-track" id="galeria-carousel">
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 1.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 2.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 3.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 4.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 5.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 6.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+          <div class="galeria-depoimento-item">
+            <img src="images/Depoimento 7.jpg" alt="Depoimento de aluna do Seca Pança" loading="lazy">
+          </div>
+        </div>
+        <button class="carousel-btn carousel-btn-next" aria-label="Próximo" data-carousel="galeria-carousel">
+          <i class="ph ph-caret-right"></i>
+        </button>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">QUERO FAZER PARTE DESSAS HISTÓRIAS</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Vagas limitadas no Lote 1
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: COMO FUNCIONA -->
+  <section class="section-como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <h2>Como funcionam os 5 dias do Seca Pança</h2>
+        <p class="tag-highlight" style="display:inline-block; margin-top:1rem;">ANOTE: 10 A 14 DE JANEIRO</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-step" data-aos="fade-up">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Você entra na live às 19:30h</h3>
+            <p>Todo dia, do dia 10 ao 14, eu te encontro ao vivo. Não é aula gravada. É acompanhamento real.</p>
+          </div>
+        </div>
+        <div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Recebe a missão do dia NA HORA</h3>
+            <p>Quem está presente recebe o material prático para aplicar imediatamente. Não ficou? Não recebe.</p>
+          </div>
+        </div>
+        <div class="timeline-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Aplica e sente no corpo</h3>
+            <p>Sem enrolação. Você assiste, aplica, e no dia seguinte a gente ajusta junto. É assim que o Seca Pança
+              funciona.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" data-aos="fade-up">
+        <a href="#checkout" class="btn btn-primary">QUERO ME COMPROMETER COM OS 5 DIAS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: TIMELINE DO DESAFIO -->
+  <section class="section-timeline-desafio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>O Que Acontece em Cada Dia</h2>
+        <p>5 dias estratégicos para destravar seu corpo e eliminar o inchaço de vez.</p>
+      </div>
+
+      <div class="carousel-wrapper" data-aos="fade-up">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Anterior" data-carousel="timeline-carousel">
+          <i class="ph ph-caret-left"></i>
+        </button>
+        <div class="carousel-track timeline-carousel-track" id="timeline-carousel">
+
+          <div class="timeline-desafio-card">
+            <span class="timeline-desafio-dia">DIA 1</span>
+            <div class="timeline-desafio-line"></div>
+            <h3>Dia do Desinchar</h3>
+            <p>Elimine líquidos retidos em 24h</p>
+          </div>
+
+          <div class="timeline-desafio-card">
+            <span class="timeline-desafio-dia">DIA 2</span>
+            <div class="timeline-desafio-line"></div>
+            <h3>Dia da Limpeza Profunda</h3>
+            <p>Desintoxique fígado e intestino</p>
+          </div>
+
+          <div class="timeline-desafio-card">
+            <span class="timeline-desafio-dia">DIA 3</span>
+            <div class="timeline-desafio-line"></div>
+            <h3>Dia Anti-Inflamatório</h3>
+            <p>Apague a inflamação silenciosa</p>
+          </div>
+
+          <div class="timeline-desafio-card">
+            <span class="timeline-desafio-dia">DIA 4</span>
+            <div class="timeline-desafio-line"></div>
+            <h3>Dia do Reset Digestivo</h3>
+            <p>Descanse seu sistema e absorva mais nutrientes</p>
+          </div>
+
+          <div class="timeline-desafio-card">
+            <span class="timeline-desafio-dia">DIA 5</span>
+            <div class="timeline-desafio-line"></div>
+            <h3>Dia da Queima Noturna</h3>
+            <p>Acelere o metabolismo enquanto dorme</p>
+          </div>
+
+        </div>
+        <button class="carousel-btn carousel-btn-next" aria-label="Próximo" data-carousel="timeline-carousel">
+          <i class="ph ph-caret-right"></i>
+        </button>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">QUERO PARTICIPAR DOS 5 DIAS</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Ao vivo, de 10 a 14 de Janeiro
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVA SEÇÃO: TRANSFORMAÇÃO -->
+  <section class="section-transformacao">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sua Transformação em 5 Dias</h2>
+        <p>Do estado de frustração para resultados reais</p>
+      </div>
+
+      <div class="section-transformacao-grid">
+
+        <!-- Antes -->
+        <div class="transform-side transform-before" data-aos="fade-right">
+          <h3>Antes do Desafio</h3>
+          <ul>
+            <li>
+              <i class="ph ph-x"></i>
+              <span>Inchada e com barriga alta</span>
+            </li>
+            <li>
+              <i class="ph ph-x"></i>
+              <span>Cansada de dietas que não funcionam</span>
+            </li>
+            <li>
+              <i class="ph ph-x"></i>
+              <span>Sem energia e motivação</span>
+            </li>
+            <li>
+              <i class="ph ph-x"></i>
+              <span>Roupas apertadas e desconfortáveis</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Seta -->
+        <div class="transform-arrow" data-aos="zoom-in" data-aos-delay="200">
+          <i class="ph ph-arrow-right"></i>
+        </div>
+
+        <!-- Depois -->
+        <div class="transform-side transform-after" data-aos="fade-left">
+          <h3>Depois do Desafio</h3>
+          <ul>
+            <li>
+              <i class="ph ph-check"></i>
+              <span>Desinchada e barriga mais reta</span>
+            </li>
+            <li>
+              <i class="ph ph-check"></i>
+              <span>Método simples que funciona</span>
+            </li>
+            <li>
+              <i class="ph ph-check"></i>
+              <span>Energia e disposição renovadas</span>
+            </li>
+            <li>
+              <i class="ph ph-check"></i>
+              <span>Roupas mais largas em 5 dias</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">QUERO ESSA TRANSFORMAÇÃO</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Começando em 10 de Janeiro
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: QUALIFICAÇÃO -->
+  <section class="section-qualificacao">
+    <div class="container">
+      <div class="section-header">
+        <h2>Antes de entrar, leia isso:</h2>
+      </div>
+      <div class="qualificacao-grid">
+        <div class="qualificacao-card card-negative" data-aos="fade-right">
+          <div class="card-header">
+            <i class="ph ph-x-circle"></i>
+            <h3>NÃO é pra você se:</h3>
+          </div>
+          <ul>
+            <li><i class="ph ph-x"></i> Você quer comprar e assistir gravado "quando der"</li>
+            <li><i class="ph ph-x"></i> Não consegue separar 30 minutos por dia às 19:30h</li>
+            <li><i class="ph ph-x"></i> Está procurando mágica sem compromisso</li>
+          </ul>
+        </div>
+        <div class="qualificacao-card card-positive" data-aos="fade-left">
+          <div class="card-header">
+            <i class="ph ph-check-circle"></i>
+            <h3>É pra você se:</h3>
+          </div>
+          <ul>
+            <li><i class="ph ph-check"></i> Consegue estar ao vivo de 10 a 14 de janeiro, às 19:30h</li>
+            <li><i class="ph ph-check"></i> Está disposta a aplicar no mesmo dia o que aprender</li>
+            <li><i class="ph ph-check"></i> Quer resultado real, não só conteúdo pra acumular</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">SIM, EU CONSIGO ME COMPROMETER</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            De 10 a 14 de Janeiro, 19:30h
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: PRICING COM URGÊNCIA MÁXIMA -->
+  <section class="section-pricing" id="checkout">
+    <div class="container">
+      <div class="section-header">
+        <h2>Escolha seu lote</h2>
+        <p class="alert-text"><i class="ph ph-warning"></i> ATENÇÃO: A virada de lote é automática.</p>
+      </div>
+
+      <!-- Urgência com Timer -->
+      <div class="pricing-urgency" data-aos="zoom-in">
+        <h3>⚠️ Lote 1 encerrando em:</h3>
+        <div id="countdown-timer-pricing" class="countdown-timer"></div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Lote 1 -->
+        <div class="pricing-card featured" data-aos="zoom-in">
+          <div class="badge-vagas">ÚLTIMAS VAGAS</div>
+          <h3>Lote 1</h3>
+          <div class="price">
+            <span class="currency">R$</span>
+            <span class="amount">37</span>
+            <span class="cents">,00</span>
+          </div>
+          <p style="font-size: 0.9rem; margin: 0.5rem 0; color: #6B7280;">Menos de R$8 por dia</p>
+          <ul class="benefits">
+            <li><i class="ph ph-check"></i> Imersão 5 Dias Ao Vivo</li>
+            <li><i class="ph ph-check"></i> Cardápio Completo</li>
+            <li><i class="ph ph-check"></i> Material de Cada Dia</li>
+            <li><i class="ph ph-check"></i> Tira Dúvidas Direto</li>
+            <li><i class="ph ph-check"></i> Grupo VIP de Suporte</li>
+          </ul>
+          <a href="#" class="btn btn-primary pulse-btn">QUERO O LOTE 1 AGORA</a>
+          <p style="font-size: 0.85rem; margin-top: 1rem; color: #6B7280;">
+            <i class="ph ph-shield-check"></i> Garantia de 7 dias
+          </p>
+        </div>
+
+        <!-- Lote 2 -->
+        <div class="pricing-card locked">
+          <div class="badge-locked"><i class="ph ph-lock"></i> BLOQUEADO</div>
+          <h3>Lote 2</h3>
+          <div class="price">R$ 57,00</div>
+          <ul class="benefits">
+            <li><i class="ph ph-check"></i> Imersão 5 Dias</li>
+            <li><i class="ph ph-check"></i> Cardápio Completo</li>
+            <li><i class="ph ph-check"></i> Tira Dúvidas</li>
+          </ul>
+        </div>
+
+        <!-- Lote 3 -->
+        <div class="pricing-card locked">
+          <div class="badge-locked"><i class="ph ph-lock"></i> BLOQUEADO</div>
+          <h3>Lote 3</h3>
+          <div class="price">R$ 67,00</div>
+          <ul class="benefits">
+            <li><i class="ph ph-check"></i> Imersão 5 Dias</li>
+            <li><i class="ph ph-check"></i> Cardápio Completo</li>
+            <li><i class="ph ph-check"></i> Tira Dúvidas</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="security-note" data-aos="fade-up"><i class="ph ph-shield-check"></i> Pagamento 100% Seguro e Dados
+        Protegidos</p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: BIO/AUTORIDADE -->
+  <section class="section-bio">
+    <div class="container">
+      <div class="bio-grid">
+        <div class="bio-image" data-aos="fade-right">
+          <div class="img-placeholder">FOTO THAIS</div>
+        </div>
+        <div class="bio-content" data-aos="fade-left">
+          <h2>Com Thais Araujo</h2>
+          <p class="bio-role">NUTRICIONISTA E PSICÓLOGA (PSICONUTRI)</p>
+          <ul class="bio-list">
+            <li><i class="ph ph-check"></i> Mais de 20 anos de experiência clínica</li>
+            <li><i class="ph ph-check"></i> Mais de 10.000 alunas e pacientes com a saúde transformada</li>
+            <li><i class="ph ph-check"></i> Idealizadora do Método Intestino Livre</li>
+            <li><i class="ph ph-check"></i> Autora do livro "Enfezado Nunca Mais"</li>
+          </ul>
+          <blockquote class="bio-quote">
+            "Criei o Desafio Seca Pança para te acompanhar de perto, ao vivo, durante 5 dias. É assim que meu método
+            funciona: junto com você."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: GARANTIA -->
+  <section class="section-garantia">
+    <div class="container">
+      <div class="garantia-box" data-aos="fade-up">
+        <div class="garantia-icon">
+          <img src="/.netlify/images?url=/images/icon_seal.png&w=160&q=80" alt="Selo Garantia" width="100" height="100"
+            loading="lazy">
+        </div>
+        <h2>Garantia Blindada de 7 Dias</h2>
+        <p>Entre, assista no dia 10. Se não sentir que vale 10x o valor de R$37, eu devolvo seu dinheiro na hora.</p>
+        <p style="margin-top: 1rem; font-weight: 600; color: var(--color-primary);">
+          Risco zero. Satisfação garantida.
+        </p>
+        <a href="#checkout" class="btn btn-outline-dark" style="margin-top: 2rem;">QUERO ENTRAR SEM RISCO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: FAQ -->
+  <section class="section-faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Dúvidas Frequentes</h2>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            QUANDO SERÁ O DESAFIO?
+            <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>O Desafio acontece AO VIVO de 10 a 14 de Janeiro, sempre às 19:30h.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            E SE EU NÃO PUDER ASSISTIR AO VIVO?
+            <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>As aulas ficam disponíveis por tempo limitado, mas o material prático de cada dia só é liberado para quem
+              estiver presente na live. O Desafio Seca Pança foi feito para ser acompanhado ao vivo - é assim que o
+              método funciona.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            VOU PASSAR FOME?
+            <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Não. O método é baseado em substituição de alimentos, não em restrição. Você vai comer, só que diferente.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            OS INGREDIENTES SÃO CAROS?
+            <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Não. Um dos pilares do Seca Pança é justamente usar alimentos acessíveis que você encontra em qualquer
+              mercado.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            TEM GARANTIA?
+            <i class="ph ph-caret-down"></i>
+          </button>
+          <div class="accordion-content">
+            <p>Sim! Garantia de 7 dias. Se você não ficar satisfeita, devolvemos seu dinheiro sem perguntas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
+        <div class="cta-with-microcopy">
+          <a href="#checkout" class="btn btn-primary">MINHAS DÚVIDAS FORAM ESCLARECIDAS</a>
+          <p class="microcopy">
+            <i class="ph ph-check-circle"></i>
+            Quero garantir minha vaga agora
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVA SEÇÃO: ÚLTIMA CHANCE (FINAL CTA) -->
+  <section class="section-final-cta">
+    <div class="container">
+      <div class="final-cta-content">
+        <h2 data-aos="fade-up">Última Chance</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          As vagas do Lote 1 estão acabando. Não deixe para depois o que pode transformar sua vida em 5 dias.
+        </p>
+
+        <div class="final-benefits">
+          <div class="final-benefit-item" data-aos="fade-up" data-aos-delay="150">
+            <i class="ph ph-check-circle"></i>
+            <span>5 dias de acompanhamento ao vivo</span>
+          </div>
+          <div class="final-benefit-item" data-aos="fade-up" data-aos-delay="200">
+            <i class="ph ph-check-circle"></i>
+            <span>Método testado por +10 mil mulheres</span>
+          </div>
+          <div class="final-benefit-item" data-aos="fade-up" data-aos-delay="250">
+            <i class="ph ph-check-circle"></i>
+            <span>Sem passar fome ou gastar muito</span>
+          </div>
+          <div class="final-benefit-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="ph ph-check-circle"></i>
+            <span>Garantia de 7 dias. Risco zero.</span>
+          </div>
+        </div>
+
+        <div class="final-cta-timer" data-aos="zoom-in" data-aos-delay="350">
+          <p>⏰ O Lote 1 (R$37) encerra em:</p>
+          <div id="countdown-timer-final" class="countdown-timer"></div>
+        </div>
+
+        <a href="#checkout" class="final-cta-btn" data-aos="zoom-in" data-aos-delay="400">
+          GARANTIR MINHA VAGA AGORA
+        </a>
+
+        <div class="trust-badges dark" data-aos="fade-up" data-aos-delay="450">
+          <div class="trust-badge">
+            <i class="ph ph-shield-check"></i>
+            <span>Pagamento Seguro</span>
+          </div>
+          <div class="trust-badge">
+            <i class="ph ph-seal-check"></i>
+            <span>Garantia 7 Dias</span>
+          </div>
+          <div class="trust-badge">
+            <i class="ph ph-lock"></i>
+            <span>Dados Protegidos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="micro-compromisso">
+        <label class="custom-checkbox">
+          <input type="checkbox" id="compromisso">
+          <span class="checkmark"></span>
+          Confirmo que consigo estar ao vivo às 19:30h de 10 a 14 de janeiro
+        </label>
+        <a href="#checkout" class="btn btn-primary btn-final">QUERO MINHA VAGA</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>Copyright 2025 Thais Araujo. Todos os direitos reservados.</p>
+        <div class="footer-logos">
+          <span>💳 Pagamento 100% Seguro</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disableMutationObserver: true,
+      duration: 800,
+      once: true
+    });
+  </script>
+  <script src="js/timer.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
