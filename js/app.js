@@ -40,6 +40,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Auto-scroll Galeria de Depoimentos
+  const galeriaTrack = document.getElementById('galeria-carousel');
+  if (galeriaTrack) {
+    let autoScrollInterval = setInterval(() => {
+      const maxScroll = galeriaTrack.scrollWidth - galeriaTrack.clientWidth;
+      if (galeriaTrack.scrollLeft >= maxScroll - 5) {
+        galeriaTrack.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        galeriaTrack.scrollBy({ left: 320, behavior: 'smooth' });
+      }
+    }, 3000);
+
+    galeriaTrack.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    galeriaTrack.addEventListener('mouseleave', () => {
+      autoScrollInterval = setInterval(() => {
+        const maxScroll = galeriaTrack.scrollWidth - galeriaTrack.clientWidth;
+        if (galeriaTrack.scrollLeft >= maxScroll - 5) {
+          galeriaTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          galeriaTrack.scrollBy({ left: 320, behavior: 'smooth' });
+        }
+      }, 3000);
+    });
+  }
+
   // Sales Progress Logic
   const percentEl = document.getElementById('sales-percent');
   const fillEl = document.getElementById('sales-fill');
