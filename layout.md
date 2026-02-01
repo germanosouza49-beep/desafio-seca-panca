@@ -34,7 +34,7 @@
 ## Seção 1: Barra Superior (Sticky Bar)
 
 ### Conteúdo
-- Texto: "Desafio Seca Pança: 10 a 14 de Janeiro, 19:30h - Você consegue estar presente nas 5 lives?"
+- Texto: "Desafio Seca Pança: 23 a 27 de Fevereiro, 7:30h - Você consegue estar presente nas 5 lives?"
 
 ### Layout
 - **Estrutura:** Faixa horizontal full-width fixa no topo (opcional sticky).
@@ -57,12 +57,12 @@
 
 ### Conteúdo
 - **Tag:** "MÉTODO COMPROVADO"
-- **Data:** "DATA: 10 A 14 DE JANEIRO (AO VIVO)"
+- **Data:** "DATA: 23 A 27 DE FEVEREIRO (AO VIVO)"
 - **Headline:** "Desafio Seca Pança" + "5 Dias de Foco Total"
-- **Subheadline:** "De 10 a 14 de janeiro eu vou te guiar ao vivo, todo dia, numa troca simples de alimentos. Sem passar fome, sem cardápio caro..." (texto completo da copy)
-- **Barra de Lotes:** "LOTE 1: R$37 (ABERTO) | LOTE 2: R$57 (EM BREVE)"
-- **CTA:** "VOU ESTAR PRESENTE - QUERO ENTRAR POR R$37"
-- **Texto abaixo CTA:** "Próximo Lote: R$57,00 (EM BREVE)"
+- **Subheadline:** "De 23 a 27 de fevereiro eu vou te guiar ao vivo, todo dia, numa troca simples de alimentos. Sem passar fome, sem cardápio caro..." (texto completo da copy)
+- **Barra de Lotes:** "LOTE 1: R$27 (ABERTO) | LOTE 2: R$37 (EM BREVE)"
+- **CTA:** "VOU ESTAR PRESENTE - QUERO ENTRAR POR R$27"
+- **Texto abaixo CTA:** "Próximo Lote: R$37,00 (EM BREVE)"
 - **Pilares (Lateral):** 
     1. Interromper Metabólico
     2. Regra da Substituição
@@ -120,10 +120,10 @@
 - **Título:** "Antes de entrar, leia isso:"
 - **Coluna Não é para você (X):**
   - "Você quer comprar e assistir gravado 'quando der'"
-  - "Não consegue separar 30 minutos por dia às 19:30h"
+  - "Não consegue separar 30 minutos por dia às 7:30h"
   - "Está procurando mágica sem compromisso"
 - **Coluna É para você (Check):**
-  - "Consegue estar ao vivo de 10 a 14 de janeiro, às 19:30h"
+  - "Consegue estar ao vivo de 23 a 27 de fevereiro, às 7:30h"
   - "Está disposta a aplicar no mesmo dia o que aprender"
   - "Quer resultado real, não só conteúdo pra acumular"
 
@@ -147,9 +147,9 @@
 
 ### Conteúdo
 - **Título:** "Como funcionam os 5 dias do Seca Pança"
-- **Subtítulo:** "ANOTE: 10 A 14 DE JANEIRO"
+- **Subtítulo:** "ANOTE: 23 A 27 DE FEVEREIRO"
 - **Cards (Steps):**
-  1. "Você entra na live às 19:30h"
+  1. "Você entra na live às 7:30h"
   2. "Recebe a missão do dia NA HORA"
   3. "Aplica e sente no corpo"
 - **CTA:** "QUERO ME COMPROMETER COM OS 5 DIAS"
@@ -201,9 +201,9 @@
 - **Título:** "Escolha seu lote"
 - **Alerta:** "ATENÇÃO: A virada de lote é automática."
 - **Cards de Preço:**
-  - **Lote 1 (Destaque):** R$ 37,00 - "ÚLTIMAS VAGAS"
-  - **Lote 2:** R$ 57,00 - "BLOQUEADO" (Cinza/Opaco)
-  - **Lote 3:** R$ 67,00 - "BLOQUEADO" (Cinza/Opaco)
+  - **Lote 1 (Destaque):** R$ 27,00 - "ÚLTIMAS VAGAS"
+  - **Lote 2:** R$ 37,00 - "BLOQUEADO" (Cinza/Opaco)
+  - **Lote 3:** R$ 47,00 - "BLOQUEADO" (Cinza/Opaco)
 - **Rodapé Preço:** "Pagamento 100% Seguro..."
 
 ### Layout
@@ -240,7 +240,7 @@
 ### Conteúdo
 - **Selo:** Imagem de selo "7 Dias de Garantia".
 - **Título:** "Garantia Blindada de 7 Dias"
-- **Texto:** "Entre, assista no dia 10..."
+- **Texto:** "Entre, assista no dia 23..."
 - **CTA:** "QUERO ENTRAR SEM RISCO"
 
 ### Layout
