@@ -136,7 +136,156 @@ ol {
 
 /* ==========================================
    PAGE STYLES
-/* Feature: Sales Progress Bar */
+/* Feature: Sales Progress Bar - Redesigned */
+.sales-progress-hero {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.sales-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.sales-lot-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sales-status {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #F59E0B;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  animation: pulseStatus 2s ease-in-out infinite;
+}
+
+@keyframes pulseStatus {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.sales-percent-display {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sales-percent-value {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.sales-percent-label {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.progress-bar-container {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e8b4d0 0%, var(--color-primary) 40%, var(--color-primary-dark) 100%);
+  border-radius: 10px;
+  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 0 12px rgba(119, 55, 88, 0.6), 0 0 4px rgba(232, 180, 208, 0.4);
+  position: relative;
+  max-width: 110%;
+}
+
+.progress-bar-fill.overflowing {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 12px rgba(119, 55, 88, 0.6), 0 0 4px rgba(232, 180, 208, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 20px rgba(119, 55, 88, 0.9), 0 0 8px rgba(232, 180, 208, 0.7);
+  }
+}
+
+.progress-bar-mark {
+  position: absolute;
+  top: -4px;
+  left: calc(100% / 1.1);
+  width: 2px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  z-index: 2;
+}
+
+.progress-bar-mark::after {
+  content: '100%';
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+}
+
+.sales-urgency-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #F59E0B;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Legacy fallback - keep old class for other sections */
 .sales-progress {
   margin-bottom: 1.5rem;
   width: 100%;
@@ -156,20 +305,15 @@ ol {
   font-weight: 700;
 }
 
-.progress-bar-bg {
-  width: 100%;
-  height: 8px;
-  background: var(--color-border);
-  border-radius: 10px;
-  overflow: hidden;
-}
+/* Responsive Sales Progress */
+@media (max-width: 900px) {
+  .sales-progress-hero {
+    padding: 1rem 1.25rem;
+  }
 
-.progress-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  border-radius: 10px;
-  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
-  box-shadow: 0 0 10px rgba(119, 55, 88, 0.5);
+  .sales-percent-value {
+    font-size: 2rem;
+  }
 }
 
 /* ==========================================
@@ -240,9 +384,7 @@ ol {
   text-align: center;
 }
 
-.hero .progress-label {
-  color: rgba(255, 255, 255, 0.8);
-}
+
 
 .hero .hero-date span {
   color: rgba(255, 255, 255, 0.9);
@@ -272,9 +414,7 @@ ol {
   color: #34D399;
 }
 
-.hero .progress-bar-bg {
-  background: rgba(255, 255, 255, 0.2);
-}
+
 
 /* Feature: Horizontal Pillars Bar */
 .hero-pillars-bar {

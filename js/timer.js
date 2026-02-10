@@ -207,9 +207,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const finalTimer = new CountdownTimer(targetDate, 'countdown-timer-final');
   finalTimer.start();
 
-  // Contador de Vagas
-  const vagasCounter = new VagasCounter(500, 125, 'sales-percent', 'sales-fill');
-  vagasCounter.init();
+  // Contador de Vagas (desativado - logica movida para app.js)
+  // const vagasCounter = new VagasCounter(500, 125, 'sales-percent', 'sales-fill');
+  // vagasCounter.init();
 
   // Scroll Tracking
   const scrollTracker = new ScrollTracker();

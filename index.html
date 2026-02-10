@@ -9,20 +9,22 @@
 
   <!-- Meta Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '637976266896082');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=637976266896082&ev=PageView&noscript=1"
-  /></noscript>
+      src="https://www.facebook.com/tr?id=637976266896082&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
   <!-- Fonts -->
@@ -86,13 +88,22 @@
           </p>
 
           <div class="cta-wrapper" data-aos="fade-up" data-aos-delay="300">
-            <div class="sales-progress">
-              <div class="progress-label">
-                <span>Lote 1: <strong id="sales-percent">50%</strong> Vendido</span>
+            <div class="sales-progress-hero">
+              <div class="sales-progress-header">
+                <span class="sales-lot-label">LOTE 1</span>
+                <span class="sales-status" id="sales-status">Esgotando</span>
               </div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill" id="sales-fill" style="width: 50%"></div>
+              <div class="sales-percent-display">
+                <span id="sales-percent" class="sales-percent-value">97%</span>
+                <span class="sales-percent-label">vendido</span>
               </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" id="sales-fill" style="width: 0%"></div>
+                </div>
+                <div class="progress-bar-mark" id="progress-mark-100"></div>
+              </div>
+              <p class="sales-urgency-text" id="sales-urgency-text">Poucas vagas restantes neste lote</p>
             </div>
             <div class="cta-with-microcopy">
               <a href="https://pay.hub.la/syLJBzf7frnFa1qla8D3" class="btn btn-primary">
@@ -667,7 +678,8 @@
         <p style="margin-top: 1rem; font-weight: 600; color: var(--color-primary);">
           Risco zero. Satisfação garantida.
         </p>
-        <a href="https://pay.hub.la/syLJBzf7frnFa1qla8D3" class="btn btn-outline-dark" style="margin-top: 2rem;">QUERO ENTRAR SEM RISCO</a>
+        <a href="https://pay.hub.la/syLJBzf7frnFa1qla8D3" class="btn btn-outline-dark" style="margin-top: 2rem;">QUERO
+          ENTRAR SEM RISCO</a>
       </div>
     </div>
   </section>
@@ -733,7 +745,8 @@
 
       <div style="text-align: center; margin-top: 3rem;" data-aos="fade-up">
         <div class="cta-with-microcopy">
-          <a href="https://pay.hub.la/syLJBzf7frnFa1qla8D3" class="btn btn-primary">MINHAS DÚVIDAS FORAM ESCLARECIDAS</a>
+          <a href="https://pay.hub.la/syLJBzf7frnFa1qla8D3" class="btn btn-primary">MINHAS DÚVIDAS FORAM
+            ESCLARECIDAS</a>
           <p class="microcopy">
             <i class="ph ph-check-circle"></i>
             Quero garantir minha vaga agora
@@ -835,7 +848,7 @@
   <!-- Meta Pixel Events -->
   <script>
     // ViewContent - dispara após carregamento da página
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       fbq('track', 'ViewContent', {
         content_name: 'Desafio Seca Pança',
         content_category: 'Landing Page',
@@ -845,8 +858,8 @@
     });
 
     // InitiateCheckout - dispara ao clicar nos botões de compra
-    document.querySelectorAll('a[href*="pay.hub.la"]').forEach(function(btn) {
-      btn.addEventListener('click', function() {
+    document.querySelectorAll('a[href*="pay.hub.la"]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
         fbq('track', 'InitiateCheckout', {
           content_name: 'Desafio Seca Pança - Lote 1',
           content_category: 'Checkout',
